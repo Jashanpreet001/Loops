@@ -1,0 +1,45 @@
+//
+//  main.c
+//  C++ Prgramming@VMM
+//  WAP to check whether a number is armstrong no. or not?
+//  Created by JASHANPREET SINGH on 05/03/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    
+    int num,sum,count,temp,orig,rem;
+    
+    printf("enter the number to check\n");
+    scanf("%d",&num);
+    
+    temp=orig=num;
+    count=0;
+    sum=0;
+    
+    while(num!=0)
+    {
+        count++;
+        num=num/10;
+        }
+    
+    while(temp!=0)
+    {
+        rem=temp%10;
+        sum=sum+pow(rem,count);
+        temp=temp/10;
+        }
+    if(orig==sum)
+        printf("The entered number is an Armstrong number\n");
+    else
+        printf("The entered number is not an Armstrong number\n");
+
+    return 0;
+    
+    
+    
+    
+}
