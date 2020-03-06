@@ -1,0 +1,38 @@
+//
+//  main.c
+//  C++ Prgramming@VMM
+//  WAP to print fibonacci series.
+//  Created by JASHANPREET SINGH on 05/03/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    
+    int terms,i,a,b,c;
+    printf("enter the number of terms you want to print\n");
+    scanf("%d",&terms);
+    a=0;
+    b=1;
+    printf("Fibonacci series for first %d terms is:\n",terms);
+    
+    if(terms==1)
+    {
+        printf("%d,",a);
+        
+    }
+    else if(terms>=2)
+    {
+        printf("%d,%d,",a,b);
+        i=1;
+        while(i<=terms-2)
+        { c=a+b;
+            printf("%d,",c);
+            a=b;
+            b=c;
+            i++;
+        }}
+    return 0;
+    }
