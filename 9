@@ -1,0 +1,25 @@
+//
+//  main.c
+//  C++ Prgramming@VMM
+//  find the sum of the series of cubes of natural number.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    
+    int i,n,sum;
+    sum=0;
+    printf("enter the nth term\n");
+    scanf("%d",&n);
+    
+    for(i=1;i<=n;i++)
+    {  sum=sum+pow(i,3);
+        
+    }
+   
+    printf("The sum of the first %d terms is %d\n",n,sum);
+    
+    return 0;
+}
